@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-hosting-demo": {
+    "quallaps-ui": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-hosting-demo",
+            "outputPath": "dist/quallaps-ui",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -31,7 +31,7 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/assets/scss/styles.scss"
             ],
             "scripts": []
           },
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-hosting-demo:build:production"
+              "browserTarget": "quallaps-ui:build:production"
             },
             "development": {
-              "browserTarget": "angular-hosting-demo:build:development"
+              "browserTarget": "quallaps-ui:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-hosting-demo:build"
+            "browserTarget": "quallaps-ui:build"
           }
         },
         "test": {
@@ -103,12 +103,9 @@
             ],
             "scripts": []
           }
-        },
-        "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
         }
       }
     }
   },
-  "defaultProject": "angular-hosting-demo"
+  "defaultProject": "quallaps-ui"
 }
