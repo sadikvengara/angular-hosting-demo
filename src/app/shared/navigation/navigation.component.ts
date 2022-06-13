@@ -81,12 +81,24 @@ export class NavigationComponent {
         }
       ]
      },
-    {
-      label: 'Repositories',
-      class: 'level-1 repositories-main-nav',
-      faIcon: 'icon-repository',
+     /***Important
+      * For dev reference
+      * Please do not remove below items which is used for Configure Display Order of Repositories
+      * This will show a settings icon on next to Repositories main navigation
+      * This should be always placed on above the Repositories menu
+      * ***/
+     {
+      label: '',
+      class: 'level-1 configure-order-repositories-icon',
+      faIcon: '',
+      disabled: true,
       repoMainIcon: 'settings',
       repoMainclass: 'repo-setting-icon',
+     },
+    {
+      label: 'Repositories',
+      class: 'level-1',
+      faIcon: 'icon-repository',
       items: [
         {
           label: 'Repository 1',

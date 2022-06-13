@@ -1157,33 +1157,10 @@ html.cdk-global-scrollblock {
     .repos-setting-icon {
       display: none;
     }
-  
-    &.configure-order-repositories-icon {
-      margin-right: 20px;
-      position: absolute;
-      right: 5px;
-      top: 10px;
-      display: inline-block;
-      z-index: 9999;
-      min-height: auto;
-      &::before {
-        display: none;
-      }
-      &:hover {
-        background-color: transparent;
-      }
-      .icon-container {
-        display: none;
-      }
-      .repos-icon {
-        display: none;
-      }
+    &.repositories-main-nav {
       .repos-setting-icon {
         display: block;
-        height: 22px;
-        width: 22px;
       }
-
     }
   }
   div[dir="ltr"] .icon-container {
@@ -1199,15 +1176,18 @@ html.cdk-global-scrollblock {
     }
   }
   .repos-setting-icon {
+    margin-right: 25px;
+    margin-top: 1px;
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    display: inline-block;
+    z-index: 9999;
     .mat-icon {
       font-size: 22px;
       color:$primary;
     }
   }
-}
-.amml-item.disabled-amml-item {
-  opacity: 1 !important;
-  pointer-events: initial !important;
 }
 .responsive-menu {
   display: none !important;
